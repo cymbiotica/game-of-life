@@ -1,33 +1,27 @@
-// TODO detemine how to populate board so it doesnt end on turn 1 or do we
+// TODO detemine how to populate ocolumnard so it doesnt end on turn 1 or do we
 
-class Game  {
+let gameBoard = []
+const size = 4
 
-  createBoard = (row, height) => {
-    // for ( let coloumn = 0; coloumn < 100; coloumn++) {
-    //   for ( let row = 0; row < 100; row ++) {
-          
-    //   }
-    // }
-    }
-    
-    // generate random num of cells based on row and height and save it for future checking
-    // keep within number of cells created
-    // check to see it grid is populated or not
-    populateBoard = () => {
-    
-    }
-    
-    checkForLiveCell = () => {
-      
-    }
+// createGameBoard = () => {
+//   for (let col = 0; col < size ; col++) {
+//     for (let row = 0; row < size; row++) {
+//         gameBoard[col].push(col, row)
+//     }        
+//   }
+//   return gameBoard
+// }
 
-    numberLiveCells = (cells) => {
 
-    }
+createGameBoard = () => {
+  for (var i = 0; i < size; i++) {
+    gameBoard[i] = [];
+  }
+  return gameBoard;
 }
 
 
 
 module.exports = {
-  Game
+  createGameBoard
 }
