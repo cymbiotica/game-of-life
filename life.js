@@ -1,5 +1,12 @@
 board = new Array(10).fill('x')
 
-module.exports = {
-  board
+const cell = {
+  isAlive: true
 }
+
+
+module.exports = {
+  board,
+  cell
+}
+

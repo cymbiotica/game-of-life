@@ -8,3 +8,8 @@ it('board is an array', () => {
 it('board array is equal to 10 spaces', () => {
   assert.equal (life.board.length, 10);
 });
+
+
+it('isCellAlive', () => {
+  assert.equal(life.cell.isAlive, true)
+})
