@@ -11,5 +11,10 @@ it('board array is equal to 10 spaces', () => {
 
 
 it('isCellAlive', () => {
-  assert.equal(life.cell.isAlive, true)
+  assert.equal(life.cell1.isAlive, true)
 })
+
+
+it('isCellDead', () => {
+  assert.equal (life.cell2.isDead, false);
+});
